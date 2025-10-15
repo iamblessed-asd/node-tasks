@@ -25,3 +25,5 @@ http://localhost:3000/weather?city=Berlin
 ```
 http://localhost:3000/weather/chart?city=Tokyo
 ```
+График выглядит следующим образом:
+<img width="1200" height="401" alt="image" src="https://github.com/user-attachments/assets/cfb857d0-d55c-4735-8bc0-2a556054f292" />
