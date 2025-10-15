@@ -3,13 +3,11 @@
 
 ## Установка и запуск
 
-### 1) Клонировать проект
-```bash
-git clone 
-cd weather-service
-```
+Для сервиса необходим docker.
+Например, можно поставить docker-desktop на Windows
 
-### 2) Запуск через Docker Compose
+После перехода в папку сервиса нужно выполнить команду:
+
 ```bash
 docker compose up --build
 ```
