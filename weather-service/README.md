@@ -14,20 +14,14 @@ docker compose up --build
 
 ## API
 
-### Получить прогноз и график (JSON)
-```
-GET /weather?city=London
-```
+### GET /weather?city={city} - Получить прогноз и график (JSON)
 ```
 http://localhost:3000/weather?city=Berlin
 ```
 
 ---
 
-### Получить график напрямую (PNG)
-```
-GET /weather/chart?city=Paris
-```
+### GET /weather/chart?city={city} - Получить график напрямую (PNG)
 ```
 http://localhost:3000/weather/chart?city=Tokyo
 ```
