@@ -12,6 +12,13 @@
 docker compose up --build
 ```
 
+После старта сервиса будут выведены следующие сообщения и станут доступны API эндпоинты:
+```bash
+weather-service  | Сервис запущен на http://localhost:3000
+weather-service  | Пример API с графиком: http://localhost:3000/weather/chart?city=Paris
+weather-service  | Пример API с JSON: http://localhost:3000/weather?city=London
+```
+
 ## API
 
 ### GET /weather?city={city} - Получить прогноз и график (JSON)
