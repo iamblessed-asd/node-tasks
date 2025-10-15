@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>File Share — Auth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <div id="authArea">
+      <h2 id="authTitle">Войти</h2>
+      <form id="authForm">
+        <input id="username" placeholder="Имя пользователя" required />
+        <input id="password" type="password" placeholder="Пароль" required />
+        <button id="authBtn" type="submit">Войти</button>
+      </form>
+      <p id="toggleLine">Нет аккаунта? <a href="#" id="toggleLink">Зарегистрироваться</a></p>
+      <div id="authMsg"></div>
+    </div>
+
+    <div id="uploadArea" class="hidden">
+      <h2>Загрузить файл</h2>
+      <form id="uploadForm">
+        <input id="fileInput" type="file" name="file" required />
+        <button type="submit">Загрузить</button>
+      </form>
+      <div id="status" class="hidden"></div>
+      <div id="linkArea" class="hidden">
+        <label>Ссылка для скачивания:</label>
+        <input id="downloadLink" readonly />
+        <button id="copyBtn">Копировать</button>
+      </div>
+      <div id="progressContainer" class="hidden">
+        <progress id="progress" value="0" max="100"></progress>
+        <div id="progressText"></div>
+      </div>
+      <button id="logoutBtn">Выйти</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
